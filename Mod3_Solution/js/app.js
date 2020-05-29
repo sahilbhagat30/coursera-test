@@ -54,7 +54,7 @@
     };
   }
   
-  MenuSearchService.$inject = ['$https', 'ApiBasePath'];
+  MenuSearchService.$inject = ['$http', 'ApiBasePath'];
   function MenuSearchService($http, ApiBasePath) {
     var service = this;
     var foundItems = [];
@@ -64,7 +64,7 @@
       if (searchTerm === "") {
         return foundItems;
       }
-      return $https({
+      return $http({
         method: "GET",
         url: (ApiBasePath + "/menu_items.json")
       }).then(function(result) {
