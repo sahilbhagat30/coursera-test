@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "assignment3-starter-code",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "assignment3-starter-code"
+	}
+}
